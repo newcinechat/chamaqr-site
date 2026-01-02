@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>ChamaQR – Campainha Digital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    button {
+      font-size: 22px;
+      padding: 20px;
+      width: 100%;
+      max-width: 320px;
+      border: none;
+      border-radius: 10px;
+      background: #00c853;
+      color: #000;
+      cursor: pointer;
+    }
+    button:active {
+      transform: scale(0.97);
+    }
+    #msg {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔔 ChamaQR</h1>
+  <p>Toque no botão para avisar o morador</p>
+
+  <button onclick="tocar()">TOCAR CAMPAINHA</button>
+
+  <p id="msg"></p>
+
+  <script>
+    function tocar() {
+      document.getElementById("msg").innerText =
+        "🔔 Campainha acionada! O morador foi avisado.";
+    }
+  </script>
+
+</body>
+</html>
